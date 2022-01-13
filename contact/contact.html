@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta name="description" content="Kubusje de Game">
-<html>
+<html lang="en">
     <head>
         <title>Contact</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,16 @@
         <link rel="icon" type="image/x-icon" href="../favicon.png">
         <script src="https://kit.fontawesome.com/e842bd2123.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            /*table,th,td {  
+                border: 1px solid black;
+            }*/
+            table,th,td {
+                border-collapse: separate;
+                border-spacing: 25px;
+                padding: 0px;
+            }
+        </style>
     </head>
     <body>
         <div class="topnav">
@@ -19,10 +29,32 @@
             <a href="#about">About</a>
         </div>
         <br>
+        <table>
+            <tr>
+                <td >
+                    <a href="mailto:kubusjedegame@gmail.com">
+                        <img src="../foto's/gmail_logo2.png" alt="E-Mail" style="height: 350px;">
+                    </a>
+                </td>
+                <td>
+                    <a href="https://github.com/kubusje/kubusje.github.io">
+                        <img src="../foto's/github_logo.png" alt="This websites github repository" style="width: 350px; height: 350px">
+                    </a>
+                </td>
+            </tr>
+            <tr class="centre">
+                <td>
+                    Email:
+                    <a href="mailto:kubusjedegame@gmail.com">kubusjedegame@gmail.com</a>
+                </td>
+                <td>
+                    Github:
+                    <a href="https://github.com/kubusje/kubusje.github.io">https://github.com/kubusje/kubusje.github.io</a>
+                </td>
+            </tr>
+        </table>
         <!--<a download href="../installers/Kubusje de Game setup.exe" style="align-items: center;">
             <button class="btn"><i class="fa fa-download"></i> Download Kubusje de Game versie 0.1.04</button>
         </a>-->
-        Email:
-        <a href="mailto:kubusjedegame@gmail.com">kubusjedegame@gmail.com</a>
     </body>
 </html>
