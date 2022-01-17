@@ -43,3 +43,17 @@
 .centre {
   text-align: center;
 }
+
+.text_left {
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .text_left {
+    width: 100%;
+  }
+}
+
+.orange {
+  color: orange;
+}
