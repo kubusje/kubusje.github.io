@@ -19,7 +19,7 @@
     </head>
     <body>
         <div class="topnav">
-            <a class="active" href="../index.html">Home</a>
+            <a class="home" href="../index.html">Home</a>
             <a href="../downloads/downloads.html">Downloads</a>
             <a href="../archive/archive.html">Archive</a>
             <a href="#">Developers Blogs</a>
@@ -32,6 +32,34 @@
           
         <div class="row">
             <div class="leftcolumn">
+                <div class="card">
+                    <h2>Versie 0.1.09</h2>
+                    <h5>Jan 22, 2022</h5>
+                    Dear reader,<br><br>
+                    It is here the long(1 day) awaited update is here, versie 0.1.09.<br>
+                    It took some effort because it first only kinda worked, so if you toched a coin instead of getting one coin you would get most of the times two coins.<br> 
+                    So that took al lot of time to debug but I have done it.<br>
+                    <p>Here is the full changelog:</p>
+                    
+                    <button class="collapsible">Open Changelog</button>
+                    <div class="content">
+                        <p>
+                            <ul>
+                                <li>Added website button on the main screen</li>
+                                <li>Added total coin counter on the level selector</li>
+                                <li>Added 2 coins in level 1</li>
+                                <li>Added 4 coins in level 2</li>
+                                <li>Added 4 coins in level 3</li>
+                                <li>Added 3 coins in level 4</li>
+                                <li>Added 2 coins in level 5</li>
+                                <li>Added 3 coins in level 6</li>
+                                <li>Made it so you can only jump when on the ground(so you cant jump when touching a box collider other than the ground)</li>
+                                <li>Made the trigger box collider of kubusje bigger</li>
+                                <li></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
                 <div class="card">
                     <h2>Coins</h2>
                     <h5>Jan 21, 2022</h5>
@@ -98,5 +126,21 @@
         <!--<div class="footer">
             <h2>Footer</h2>
         </div>-->
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
     </body>
 </html>

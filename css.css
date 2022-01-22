@@ -21,10 +21,15 @@
   }
   
   /* Add a color to the active/current link */
-  .topnav a.active {
+  .topnav a.home {
     background-color: #04AA6D;
     color: white;
   }
+
+  /*.home{
+    background-color: #04AA6D;
+    color: white;
+  }*/
 
   .btn {
     background-color: DodgerBlue;
